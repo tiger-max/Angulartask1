@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <!-- <form class="form-inline">
+        <div class="row">
+            <H2>
+                Username : <span><input type="text" class="form-control" [(ngModel)]="username"/></span>
+                <H2>
+                    <button type="submit" class="btn" (click)="appChild1.showData()">Submit</button>
+                 </H2>
+            </H2>
+        </div>
+        
+    </form> -->
+    <H2>
+        Username : <span><input type="text" class="form-control" [(ngModel)]="username"/></span>
+            
+    </H2>
+     <H2>
+        <button type="submit" class="btn" (click)="appChild1.showData();">Submit</button>
+     </H2>
+     <div>
+        <app-child1 #appChild1 [childExample]="username"></app-child1>
+     </div>
+     
+</div>
+
+
+
+ <!-- [childExample]="username" -->
+ <!-- //bind with other variable instead of username at app-child1 calling
+ //set username in getData method -->
